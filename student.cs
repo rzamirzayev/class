@@ -15,46 +15,45 @@ namespace class_task
         public string group;
         public bool isgraduated;
         public int point;
-    }
-    public void Person()
-    {
-        Console.WriteLine("Ad:"+this.name+"Soyad:"+this.surname);
-    }
-    public void Gostericiler()
-    {
-        Console.WriteLine("Ad:" + this.name +"Soyad"+this.surname+"Qrup"+this.group+"Mezun:"+this.isgraduated+"Bal:"+this.point);
-        if(this.isgraduated==true)
-            Console.WriteLine("Mezun olub");
-        else
-            Console.WriteLine("Kesilib");
+        public void Person()
+        {
+            Console.WriteLine("Ad:" + this.name + "Soyad:" + this.surname);
+        }
+        public void Gostericiler()
+        {
+            Console.WriteLine("Ad:" + this.name + " Soyad" + this.surname + " Qrup" + this.group +" Bal:" + this.point);
+            if (this.isgraduated == true)
+                Console.WriteLine("Mezun olub");
+            else
+                Console.WriteLine("Kesilib");
 
-    }
-    public void Exam()
-    {
-        if (this.point>80)
-            Console.WriteLine("ikinci imtahana daxil ola bilersiz");
-        else
-            Console.WriteLine("imtahana daxil ola bilmersiz");
-    }
-    public Student(string name, string surname, int point, string group)
-    {
-        this.point = point;
-        this.name= name;
-        this.surname= surname;
-        this.group= group;
-           
-        if (points > 50)
-        {
-             this.isgraduated =true;
         }
-        else
+        public void Exam()
         {
-             this.isgraduated = false;
+            if (this.point > 80)
+                Console.WriteLine("ikinci imtahana daxil ola bilersiz");
+            else
+                Console.WriteLine("imtahana daxil ola bilmersiz");
         }
-     }
+        public student(string name, string surname, int point, string group)
+        {
+            this.point = point;
+            this.name = name;
+            this.surname = surname;
+            this.group = group;
+
+            if (point > 50)
+            {
+                this.isgraduated = true;
+            }
+            else
+            {
+                this.isgraduated = false;
+            }
+         
+        }
+    }
+    
 
         
-     
-        
-     
-    }
+}
